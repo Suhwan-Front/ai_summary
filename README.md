@@ -8,4 +8,4 @@
     - 보조자: 이전 내용을 바탕으로 프롬프트에게 요청 하고자 할 때 사용 (ex. 퓨샷러닝)
     - 사용자: 이 서비스를 사용할 이용자
 
-기술 스택: React, Styled-component, Antd, Vite, Typescript
+기술 스택: React, Styled-component, Antd, Typescript
