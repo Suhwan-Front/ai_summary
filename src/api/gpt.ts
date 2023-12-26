@@ -1,4 +1,4 @@
-const CallGPT = async () => {
+const CallGPT = async ({prompt}) => {
   console.log('GPT 호출');
   /* 
   curl https://api.openai.com/v1/chat/completions \
@@ -41,6 +41,16 @@ const CallGPT = async () => {
         analysis: here is [schedule analysis],
         action_list: here is [3 action tips]
       }
+
+      [events]:
+      `,
+    },
+    {
+      role: 'user',
+      content: `
+      """
+      ${prompt}
+      """
       `,
     },
   ];
