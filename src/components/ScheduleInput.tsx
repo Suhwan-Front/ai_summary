@@ -5,7 +5,17 @@ const ScheduleInput = ({isLoading, onSubmit}) => {
   const handleUserInput = e => {
     setUserInput(e.target.value);
   };
-  return <input className="" value={userInput} onChange={handleUserInput} />;
+  return (
+    <div>
+      <input
+        className=""
+        value={userInput}
+        onChange={handleUserInput}
+        placeholder="일정에 대해 간단히 적어주세요."
+      />
+      <button>GPT 일정 요약해줘</button>
+    </div>
+  );
 };
 
 export default ScheduleInput;
