@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const CallGPT = async ({prompt}) => {
   console.log('GPT 호출');
   /* 
